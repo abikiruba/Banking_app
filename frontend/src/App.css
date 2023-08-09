@@ -1,0 +1,305 @@
+.loginform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  background-color: rgb(215, 199, 251);
+  margin-left: 420px;
+  margin-right: 420px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  margin-right: 20px;
+}
+
+.loginbutton {
+  margin-top: 20px;
+}
+
+.createbutton {
+  margin-top: 10px;
+}
+
+.createbtn{
+  background-color: rgb(81, 33, 205);
+  color: white;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.login-image {
+  max-width: 100%;
+  max-height: 1000px; /* Adjust the height as needed */
+}
+
+/* .emailfield{
+  margin-top: 20px;
+}
+
+.passwordfield{
+  margin-top: 20px;
+}
+
+.signupbutton{
+  margin-top: 25px;
+} */
+.signup-container {
+  display: flex;
+  /* align-items: flex-start; */
+  /* justify-content: space-between; */
+  max-width: 800px; /* Adjust the container width as needed */
+  margin: 0 auto;
+  margin-top: 200px;
+  background-color: rgb(215, 199, 251);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.signup-form .namefield,
+.signup-form .emailfield,
+.signup-form .passwordfield,
+.signup-form .signupbutton {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.signup-form label {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  flex: 3;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  background-color: rgb(81, 33, 205);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start; /* Align the image to the top of the container */
+}
+
+.signup-image {
+  max-width: 600px; /* Adjust the width as needed */
+  max-height: 300px; /* Adjust the height as needed */
+  border-radius: 10px;
+margin-top: -20px;}
+
+/* home page styling part */
+.ai-bank-text {
+  text-align: right;
+  font-size: 54px;
+  font-weight: bold;
+  background-color: rgb(215, 199, 251);
+ 
+}
+
+.text-column {
+  color: black;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-right: 130px;
+  text-align: justify;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px; /* Adjust the gap value as needed */
+  margin-top: 120px;
+}
+
+.grid-section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px; /* Adjust the gap value as needed */
+  margin-top: 70px;
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 80px; /* Add margin on the left side of the image */
+}
+
+.depositeadd{
+  background-color: rgb(215, 199, 251);
+  max-width: 250px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.depositecreate{
+  /* margin-top: 10px; */
+  background-color: rgb(215, 199, 251);
+  max-width: 300px;
+  max-height: 100px;
+  text-align: center;
+  border-radius: 25px;
+
+}
+
+.depositecreate1{
+  background-color: rgb(215, 199, 251);
+  max-width: 300px;
+  max-height: 100px;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: -120px;
+
+}
+
+
+/* fixed deposite page styling part */
+.fixed-account {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+.ai-bank-text {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  flex: 1;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.form-group input {
+  flex: 3;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type='submit'] {
+  background-color: rgb(81, 33, 205);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.email-input-container,
+.password-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+.name-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cover-container {
+  position: relative;
+}
+
+.login-button-container {
+  position: absolute;
+  right: 20px;
+}
+
+.login-button{
+  background-color: rgb(215, 199, 251);
+}
+
+/* App.css (or your custom CSS file) */
+
+.table-container {
+  margin: 0 auto; /* Center the table horizontally */
+  margin-top: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd; /* Add borders between columns and rows */
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row background color */
+}
+
+.heading{
+  margin-top: 20px;
+  text-align: center  ;
+}
