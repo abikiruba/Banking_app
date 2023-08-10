@@ -140,7 +140,7 @@ const Fixedaccount = () => {
           const token = localStorage.getItem('token');
 
           // Now you can save the data to the database, including the totalAmount
-          const response = await fetch('http://localhost:3002/submit', {
+          const response = await fetch('http://database-2.cyqgzaokta0g.eu-north-1.rds.amazonaws.com:3002/submit', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
