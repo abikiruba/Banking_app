@@ -10,7 +10,7 @@ const Login = () => {
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://database-2.cyqgzaokta0g.eu-north-1.rds.amazonaws.com:3002/login', {
+    const response = await fetch('http://database-10.cyqgzaokta0g.eu-north-1.rds.amazonaws.com:3306/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

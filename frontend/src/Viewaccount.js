@@ -16,7 +16,7 @@ const Viewaccount = () => {
     }
 
     try {
-      const response = await fetch(`http://database-2.cyqgzaokta0g.eu-north-1.rds.amazonaws.com:3002/Viewaccount/${email}`, {
+      const response = await fetch(`http://database-10.cyqgzaokta0g.eu-north-1.rds.amazonaws.com:3306/Viewaccount/${email}`, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': token,

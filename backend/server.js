@@ -2,52 +2,28 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
-const Sequelize = require('sequelize');
+const mysql = require('mysql2');
 
 const app = express();
-const port = 3002; // Change this to a different port number
+// const port = 3306; // Change this to a different port number
 
-const dbConfig = {
-  host: 'bankingapp-rds.cyqgzaokta0g.eu-north-1.rds.amazonaws.com',
-  username: 'bankingapp',
-  password: 'sathu0530A.',
-  database: 'bankingapp-rds',
-  dialect: 'mysql',
-};
-
-// Create a Sequelize instance
-const sequelize = new Sequelize(dbConfig.database, dbConfig.username, dbConfig.password, {
-  host: dbConfig.host,
-  dialect: dbConfig.dialect,
+const db = mysql.createConnection({
+  host: 'database-10.cyqgzaokta0g.eu-north-1.rds.amazonaws.com',
+  port: '3306',
+  user: 'admin',    // Change 'username' to 'user'
+  password: 'abi0902#',
+  database: 'my_db',
 });
 
-// Define User model
-const User = sequelize.define('user', {
-  name: Sequelize.STRING,
-  email: Sequelize.STRING,
-  password: Sequelize.STRING,
+
+db.connect((err) =>{
+  if (err) {
+    console.log(err.message);
+    return;
+  }
+  console.log("Database connected.");
 });
 
-// Define FixedDeposit model
-const FixedDeposit = sequelize.define('fixed_deposit', {
-  fullname: Sequelize.STRING,
-  email: Sequelize.STRING,
-  nic: Sequelize.STRING,
-  phonenumber: Sequelize.STRING,
-  age: Sequelize.INTEGER,
-  amount: Sequelize.DECIMAL,
-  maturityPeriod: Sequelize.INTEGER,
-  totalAmount: Sequelize.DECIMAL,
-});
-
-// Sync the models with the database
-sequelize.sync()
-  .then(() => {
-    console.log('Models synced with the database.');
-  })
-  .catch((error) => {
-    console.error('Error syncing models:', error);
-  });
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -130,6 +106,6 @@ app.get('/Viewaccount/:email', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Server is running on http://localhost:${port}`);
+// });
